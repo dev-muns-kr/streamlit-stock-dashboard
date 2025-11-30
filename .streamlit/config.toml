@@ -1,0 +1,10 @@
+[theme]
+base="light"   # 또는 dark
+primaryColor="#F63366"
+
+[server]
+headless=true
+port=8501
+
+[layout]
+wide=true  # 페이지를 가로 전체로 확장
