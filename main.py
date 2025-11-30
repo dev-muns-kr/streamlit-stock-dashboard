@@ -48,7 +48,7 @@ nasdaq_prev = nasdaq_hist["Close"].iloc[-2]
 nasdaq_change = (nasdaq_current - nasdaq_prev) / nasdaq_prev * 100
 
 vix = yf.Ticker("^VIX")
-vix_hist = vix.history(period="2d")  # 최근 2일 데이터
+vix_hist = vix.history(period="7d")  # 최근 2일 데이터
 vix_current = vix_hist["Close"].iloc[-1]
 vix_prev = vix_hist["Close"].iloc[-2]
 vix_change = (vix_current - vix_prev) / vix_prev * 100
